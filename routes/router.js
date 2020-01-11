@@ -3,4 +3,4 @@ var router = express.Router();
 
 // Routing starts here
 
-module.exports = routing;
+module.exports = router;
