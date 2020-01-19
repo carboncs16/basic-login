@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var config = require('../config/config');
+var passportLocalMongoose = require('passport-local-mongoose');
 
 var userSchema = new Schema({
     username: {
@@ -14,14 +15,11 @@ var userSchema = new Schema({
         min: 8
     },
     email: {
-        type: String,
-        required: true
+        type: String
     }
 });
 
 mongoose.Promise = global.Promise;
-mongoose.connect(config.db, { useNewUrlParser: true, useUnifiedTopology: true });
-
 var userModel = mongoose.model('User', userSchema);
 
 module.exports = userModel;
