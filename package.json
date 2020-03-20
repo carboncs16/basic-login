@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd ./angularFronted/ && npm i && npm run build & cd .. && node index.js"
+    "start": "cd ./angular-frontend/ && npm i && npm run build & cd .. && node index.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
